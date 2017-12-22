@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN set -xe && \
     apt-get update && \
-    apt-get install --no-install-recommends -y imagemagick php5.6-mysqli php5.6-intl && \
+    apt-get install --no-install-recommends -y imagemagick php5.6-mysqli php5.6-intl php5.6-curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
